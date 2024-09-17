@@ -1,7 +1,7 @@
-create database base1
+create database ac01base
  
-use base1
- 
+use ac01base
+
 create table produtos(
 	id int primary key,
 	nome varchar(50) not null,
@@ -76,4 +76,4 @@ select id,nome,preco,estoque,categoria from produtos
 where preco<50
  --20
 select id,nome,preco,estoque,categoria from produtos
-where nome like '%PROMOÇÃO%'
+where nome like 'PROMOÇÃO%'			
