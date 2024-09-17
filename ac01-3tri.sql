@@ -11,16 +11,17 @@ create table produtos(
 )
  
 insert into produtos (id, nome, preco, estoque, categoria) values
-(1, 'Sabão em pó', 20, 3, 'Limpeza'),
-(2, 'Celular Android', 900, 2, 'Eletrônico'),
-(3, 'Teclado Mecânico', 150, 10, 'Eletrônico'),
-(4, 'Cadeira Ergonomica', 350, 5, 'Mobiliário'),
-(5,'Maçã',2.15,30,'Perecível'),
-(6, 'Cafeteira Elétrica', 120, 8, 'Eletrodoméstico'),
-(7, 'Tênis Esportivo', 250, 15, 'Vestuário'),
-(8, 'Óculos de Sol', 80, 20, 'Acessório'),
-(9, 'Escova de Dente', 10, 50, 'Higiene'),
-(10, 'Mouse Sem Fio', 60, 12, 'Eletrônico')
+(1, 'Mesa nada gamer', 350, 5, 'Mobiliário'),
+(2, 'Air fryer', 350, 8, 'Eletrodoméstico'),
+(3, 'Vassoura', 15, 3, 'Limpeza'),
+(4, 'Smartphone XIOMI POCO X5 5G', 2000, 3, 'Eletrônico'),
+(5, 'Teclado Mecânico', 150, 10, 'Eletrônico'),
+(6,'Leite em pó',40,4,'Perecível'),
+(7, 'All Star', 250, 15, 'Roupa'),
+(8, 'Colar de Prata', 80, 20, 'Acessório'),
+(9, 'Escova de privada', 10, 69, 'Higiene'),
+(10, 'PROMOÇÃO - Microfone Fifine', 180, 5, 'Eletrônico')
+
  
 select id,nome,preco,estoque,categoria from produtos
  
