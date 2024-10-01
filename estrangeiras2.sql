@@ -46,3 +46,8 @@ dependentes.granParent from dependentes inner join funcionarios
 on funcionarios.id=dependentes.idFunc
 /*where funcionarios.id = 1 (Trazer funcionarios com apenas o id 1)
 where dependentes.id=4 (Trazer apenas dependentes com id 4)
+
+/*SELECT personagens.nome,itens.nomeItem FROM personagemItem
+INNER JOIN personagens ON personagens.id = personagem_Item.idPersonagem
+INNER JOIN itens ON itens.id = personagem_item.idItem
+ORDER by personagens.nome*/
