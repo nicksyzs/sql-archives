@@ -62,4 +62,9 @@ inner join livros on livros.id_livro=autor_livros.id_livro
 select autores.nome_autor, livros.nome_livro from autor_livros
 inner join autores on autores.id_autor=autor_livros.id_autor
 inner join livros on livros.id_livro=autor_livros.id_livro 
-where 
+where livros.id = 1
+
+select autores.nome_autor, livros.nome_livro from autor_livros
+inner join autores on autores.id_autor=autor_livros.id_autor
+inner join livros on livros.id_livro=autor_livros.id_livro 
+where autores.id = 1
