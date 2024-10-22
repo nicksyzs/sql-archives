@@ -1,6 +1,5 @@
-create database ex22
-
-use ex22
+create database ex2
+use ex2
 
 create table autores(
 id_autor int primary key identity (1,1),
@@ -44,16 +43,16 @@ constraint fk_autorlivros_autor foreign key(id_autor)
 references autores(id_autor)
 )
 
-insert into autor_livros (id_autor, id_livro) values (1, 1); -- J.K. Rowling, Harry Potter e a Pedra Filosofal
-insert into autor_livros (id_autor, id_livro) values (2, 2); -- George R.R. Martin, A Guerra dos Tronos
-insert into autor_livros (id_autor, id_livro) values (3, 3); -- J.R.R. Tolkien, O Senhor dos Anéis: A Sociedade do Anel
-insert into autor_livros (id_autor, id_livro) values (4, 4); -- Agatha Christie, Assassinato no Expresso do Oriente
-insert into autor_livros (id_autor, id_livro) values (5, 5); -- Isaac Asimov, Fundação
-insert into autor_livros (id_autor, id_livro) values (6, 6); -- Stephen King, It: A Coisa
-insert into autor_livros (id_autor, id_livro) values (7, 7); -- Mark Twain, As Aventuras de Tom Sawyer
-insert into autor_livros (id_autor, id_livro) values (8, 8); -- Jane Austen, Orgulho e Preconceito
-insert into autor_livros (id_autor, id_livro) values (9, 9); -- F. Scott Fitzgerald, O Grande Gatsby
-insert into autor_livros (id_autor, id_livro) values (10, 10); -- Ernest Hemingway, O Velho e o Mar
+insert into autor_livros (id_autor, id_livro) values (1, 1); 
+insert into autor_livros (id_autor, id_livro) values (2, 2); 
+insert into autor_livros (id_autor, id_livro) values (3, 3); 
+insert into autor_livros (id_autor, id_livro) values (4, 4); 
+insert into autor_livros (id_autor, id_livro) values (5, 5); 
+insert into autor_livros (id_autor, id_livro) values (6, 6); 
+insert into autor_livros (id_autor, id_livro) values (7, 7); 
+insert into autor_livros (id_autor, id_livro) values (8, 8); 
+insert into autor_livros (id_autor, id_livro) values (9, 9);
+insert into autor_livros (id_autor, id_livro) values (10, 10); 
 
 select autores.nome_autor, livros.nome_livro from autor_livros
 inner join autores on autores.id_autor=autor_livros.id_autor
@@ -62,9 +61,9 @@ inner join livros on livros.id_livro=autor_livros.id_livro
 select autores.nome_autor, livros.nome_livro from autor_livros
 inner join autores on autores.id_autor=autor_livros.id_autor
 inner join livros on livros.id_livro=autor_livros.id_livro 
-where livros.id = 1
+where livros.id_livro = 1
 
 select autores.nome_autor, livros.nome_livro from autor_livros
 inner join autores on autores.id_autor=autor_livros.id_autor
 inner join livros on livros.id_livro=autor_livros.id_livro 
-where autores.id = 1
+where autores.id_autor = 1
